@@ -21,7 +21,7 @@ describe "Static pages" do
   describe "Help page" do
     before { visit help_path }
     let(:heading)    { 'Sample App' }
-    let(:page_title) { '' }
+    let(:page_title) { 'Help' }
 
     it_should_behave_like "all static pages"
     it { should_not have_title('| Help') }
@@ -30,7 +30,7 @@ describe "Static pages" do
   describe "About page" do
     before { visit about_path }
     let(:heading)    { 'Sample App' }
-    let(:page_title) { '' }
+    let(:page_title) { 'About' }
 
     it_should_behave_like "all static pages"
     it { should_not have_title('| About') }
@@ -39,7 +39,7 @@ describe "Static pages" do
   describe "Contact page" do
     before { visit contact_path }
     let(:heading)    { 'Sample App' }
-    let(:page_title) { '' }
+    let(:page_title) { 'Contact' }
 
     it_should_behave_like "all static pages"
     it { should_not have_title('| Contact') }
